@@ -7,9 +7,9 @@
                     <p class="text-xs-center">
                         <!-- <router-link :to="{name: 'login'}">Need an account?</router-link> -->
                     </p>   
-                    <mcv-validation-errors:
+                    <mcv-validation-errors
                         v-if="validationErrors"
-                        validation-errors = "validationErrors"
+                        :validation-errors = "validationErrors"
                     />
                     <form @submit.prevent="onSubmit">
                         <fieldset class="form-group">
@@ -52,12 +52,12 @@
 </template>
 
 <script>
-//mport McvValidationErrors from '@/components/ValidationErrors.vue'
+import McvValidationErrors from '@/components/ValidationErrors.vue'
 
 export default {
     name: 'McvRegister',
     components: {
-        /*McvValidationErrors*/
+        McvValidationErrors
     },
     data(){
         return {
