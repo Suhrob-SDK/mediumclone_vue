@@ -53,6 +53,7 @@
 
 <script>
 import McvValidationErrors from '@/components/ValidationErrors.vue'
+import { actionTypes } from '@/store/modules/auth'
 
 export default {
     name: 'McvRegister',
@@ -77,7 +78,8 @@ export default {
     methods: {
         onSubmit() {
             console.log('submite form')
-            this.$store.dispatch('register', {
+            this.$store
+               .dispatch(actionTypes.register, {
                 email: this.email,
                 username: this.username,
                 password: this.password
