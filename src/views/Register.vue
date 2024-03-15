@@ -71,7 +71,7 @@ export default {
             return this.$store.state.auth.isSubmitting
         }, 
         validationErrors() {
-            return this.$store.$state.auth.validationErrors
+            return this.$store.state.auth.validationErrors
         }
     },
     methods: {
