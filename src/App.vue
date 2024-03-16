@@ -1,17 +1,23 @@
 <template>
   <div>
-    hellow world
+    <mcv-topbar/>
 
-    <router-view></router-view>
+    <router-view/>
   </div>  
 </template>
 
 <script>
-export default {
+import McvTopbar from '@/components/Topbar.vue'
 
+export default {
+  name: 'McvApp',
+  components: {
+    McvTopbar
+  },
+  
 }
 </script>
 
 <style>
 
-</style>
+</style>@/components/TopBar.vue

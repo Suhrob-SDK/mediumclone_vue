@@ -19,6 +19,21 @@ const routes = [
     name: 'login',
     component: Login
   },
+  {
+    path: '/createArticle',
+    name: 'createArticle',
+    //component: CreateArticle
+  },
+  {
+    path: '/settings',
+    name: 'settings',
+    //component: Settings
+  },
+  {
+    path: '/userProfile',
+    name: 'userProfile',
+    //omponent: UserProfile
+  }
   
 ]
 

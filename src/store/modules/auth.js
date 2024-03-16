@@ -23,6 +23,16 @@ export const actionTypes = {
     login: '[auth] login'
 }
 
+export const getterTypes = {
+    currentUser: '[auth] currentUser'
+}
+
+const getters = {
+    [getterTypes.currentUser]: state => {
+        return state.currentUser
+    }
+}
+
 const mutations = {
     [mutationTypes.registerStart](state){
         state.isSubmitting = true
@@ -96,5 +106,6 @@ const actions = {
 export default {
     state,
     mutations,
-    actions
+    actions, 
+    getters
 }
