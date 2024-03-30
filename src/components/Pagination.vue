@@ -1,5 +1,5 @@
 <template>
-  <div class="pagination">
+  <ul class="pagination">
     <li 
         v-for="page in pages" 
         :key="page" 
@@ -10,7 +10,7 @@
             {{ page }}
         </router-link>        
     </li>
-  </div>
+  </ul>
 </template>
 
 <script>
