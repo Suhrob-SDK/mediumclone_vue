@@ -35,13 +35,14 @@ export default {
             type: String,
             requred: true
         },
-        computed: {
+        
+    },
+    computed: {
             pages() {
                 const pagesCount = Math.ceil(this.total / this.limit)
                 return range(1, pagesCount)
             }
         }
-    }
 }
 </script>
 
